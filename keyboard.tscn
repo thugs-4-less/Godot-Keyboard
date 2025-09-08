@@ -1,4 +1,4 @@
-[gd_scene load_steps=10 format=3 uid="uid://cmdw6eo4d757y"]
+[gd_scene load_steps=11 format=3 uid="uid://cmdw6eo4d757y"]
 
 [ext_resource type="Script" uid="uid://tgu8xkjoppqe" path="res://keyboard.gd" id="1_6veuu"]
 [ext_resource type="FontFile" uid="uid://bg7gavbf6j0ij" path="res://Fonts/Roboto_SemiCondensed-Regular.ttf" id="1_yo7bg"]
@@ -40,6 +40,15 @@ corner_radius_bottom_left = 20
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_d8yjl"]
 bg_color = Color(0.258824, 0.258824, 0.258824, 1)
+border_width_bottom = 5
+border_color = Color(0.0962047, 0.0962048, 0.0962047, 1)
+corner_radius_top_left = 20
+corner_radius_top_right = 20
+corner_radius_bottom_right = 20
+corner_radius_bottom_left = 20
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_b3m6d"]
+bg_color = Color(0.188235, 0.188235, 0.188235, 1)
 border_width_bottom = 5
 border_color = Color(0.0962047, 0.0962048, 0.0962047, 1)
 corner_radius_top_left = 20
@@ -536,7 +545,7 @@ theme_override_font_sizes/font_size = 50
 theme_override_styles/focus = SubResource("StyleBoxEmpty_6veuu")
 theme_override_styles/hover = SubResource("StyleBoxFlat_dutb4")
 theme_override_styles/pressed = SubResource("StyleBoxEmpty_yo7bg")
-theme_override_styles/normal = SubResource("StyleBoxFlat_6veuu")
+theme_override_styles/normal = SubResource("StyleBoxFlat_b3m6d")
 text = "."
 
 [node name="enter" type="Button" parent="Screen/Background/AllComponentsComtainer/AllButtons/ButtonRows/Row4"]
@@ -552,6 +561,9 @@ theme_override_styles/pressed = SubResource("StyleBoxEmpty_yo7bg")
 theme_override_styles/normal = SubResource("StyleBoxFlat_rpc6l")
 text = "↵"
 
+[connection signal="pressed" from="Screen/Background/AllComponentsComtainer/AllButtons/ButtonRows/Row3/CPL" to="." method="_on_cpl_pressed"]
 [connection signal="pressed" from="Screen/Background/AllComponentsComtainer/AllButtons/ButtonRows/Row3/DEL" to="." method="_on_del_pressed"]
+[connection signal="pressed" from="Screen/Background/AllComponentsComtainer/AllButtons/ButtonRows/Row4/123" to="." method="_on__pressed"]
+[connection signal="pressed" from="Screen/Background/AllComponentsComtainer/AllButtons/ButtonRows/Row4/emoji" to="." method="_on_emoji_pressed"]
 [connection signal="pressed" from="Screen/Background/AllComponentsComtainer/AllButtons/ButtonRows/Row4/space" to="." method="_on_space_pressed"]
 [connection signal="pressed" from="Screen/Background/AllComponentsComtainer/AllButtons/ButtonRows/Row4/enter" to="." method="_on_enter_pressed"]
