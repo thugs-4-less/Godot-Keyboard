@@ -1,4 +1,4 @@
-[gd_scene load_steps=6 format=3 uid="uid://cmdw6eo4d757y"]
+[gd_scene load_steps=8 format=3 uid="uid://cmdw6eo4d757y"]
 
 [ext_resource type="FontFile" uid="uid://bg7gavbf6j0ij" path="res://Fonts/Roboto_SemiCondensed-Regular.ttf" id="1_yo7bg"]
 
@@ -8,6 +8,14 @@ corner_radius_top_left = 10
 corner_radius_top_right = 10
 corner_radius_bottom_right = 10
 corner_radius_bottom_left = 10
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_dutb4"]
+corner_radius_top_left = 20
+corner_radius_top_right = 20
+corner_radius_bottom_right = 20
+corner_radius_bottom_left = 20
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_yo7bg"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_6veuu"]
 bg_color = Color(0.258824, 0.258824, 0.258824, 1)
@@ -121,6 +129,8 @@ layout_mode = 2
 theme_override_colors/font_color = Color(1, 1, 1, 1)
 theme_override_fonts/font = ExtResource("1_yo7bg")
 theme_override_font_sizes/font_size = 50
+theme_override_styles/hover = SubResource("StyleBoxFlat_dutb4")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_yo7bg")
 theme_override_styles/normal = SubResource("StyleBoxFlat_6veuu")
 text = "q"
 
@@ -130,6 +140,8 @@ layout_mode = 2
 theme_override_colors/font_color = Color(1, 1, 1, 1)
 theme_override_fonts/font = ExtResource("1_yo7bg")
 theme_override_font_sizes/font_size = 50
+theme_override_styles/hover = SubResource("StyleBoxFlat_dutb4")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_yo7bg")
 theme_override_styles/normal = SubResource("StyleBoxFlat_6veuu")
 text = "w"
 
@@ -139,6 +151,8 @@ layout_mode = 2
 theme_override_colors/font_color = Color(1, 1, 1, 1)
 theme_override_fonts/font = ExtResource("1_yo7bg")
 theme_override_font_sizes/font_size = 50
+theme_override_styles/hover = SubResource("StyleBoxFlat_dutb4")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_yo7bg")
 theme_override_styles/normal = SubResource("StyleBoxFlat_6veuu")
 text = "e"
 
@@ -148,6 +162,8 @@ layout_mode = 2
 theme_override_colors/font_color = Color(1, 1, 1, 1)
 theme_override_fonts/font = ExtResource("1_yo7bg")
 theme_override_font_sizes/font_size = 50
+theme_override_styles/hover = SubResource("StyleBoxFlat_dutb4")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_yo7bg")
 theme_override_styles/normal = SubResource("StyleBoxFlat_6veuu")
 text = "r"
 
@@ -157,6 +173,8 @@ layout_mode = 2
 theme_override_colors/font_color = Color(1, 1, 1, 1)
 theme_override_fonts/font = ExtResource("1_yo7bg")
 theme_override_font_sizes/font_size = 50
+theme_override_styles/hover = SubResource("StyleBoxFlat_dutb4")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_yo7bg")
 theme_override_styles/normal = SubResource("StyleBoxFlat_6veuu")
 text = "t"
 
@@ -166,6 +184,8 @@ layout_mode = 2
 theme_override_colors/font_color = Color(1, 1, 1, 1)
 theme_override_fonts/font = ExtResource("1_yo7bg")
 theme_override_font_sizes/font_size = 50
+theme_override_styles/hover = SubResource("StyleBoxFlat_dutb4")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_yo7bg")
 theme_override_styles/normal = SubResource("StyleBoxFlat_6veuu")
 text = "y"
 
@@ -175,6 +195,8 @@ layout_mode = 2
 theme_override_colors/font_color = Color(1, 1, 1, 1)
 theme_override_fonts/font = ExtResource("1_yo7bg")
 theme_override_font_sizes/font_size = 50
+theme_override_styles/hover = SubResource("StyleBoxFlat_dutb4")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_yo7bg")
 theme_override_styles/normal = SubResource("StyleBoxFlat_6veuu")
 text = "u"
 
@@ -184,6 +206,8 @@ layout_mode = 2
 theme_override_colors/font_color = Color(1, 1, 1, 1)
 theme_override_fonts/font = ExtResource("1_yo7bg")
 theme_override_font_sizes/font_size = 50
+theme_override_styles/hover = SubResource("StyleBoxFlat_dutb4")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_yo7bg")
 theme_override_styles/normal = SubResource("StyleBoxFlat_6veuu")
 text = "i"
 
@@ -193,6 +217,8 @@ layout_mode = 2
 theme_override_colors/font_color = Color(1, 1, 1, 1)
 theme_override_fonts/font = ExtResource("1_yo7bg")
 theme_override_font_sizes/font_size = 50
+theme_override_styles/hover = SubResource("StyleBoxFlat_dutb4")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_yo7bg")
 theme_override_styles/normal = SubResource("StyleBoxFlat_6veuu")
 text = "o"
 
@@ -202,6 +228,8 @@ layout_mode = 2
 theme_override_colors/font_color = Color(1, 1, 1, 1)
 theme_override_fonts/font = ExtResource("1_yo7bg")
 theme_override_font_sizes/font_size = 50
+theme_override_styles/hover = SubResource("StyleBoxFlat_dutb4")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_yo7bg")
 theme_override_styles/normal = SubResource("StyleBoxFlat_6veuu")
 text = "p"
 
@@ -216,6 +244,8 @@ layout_mode = 2
 theme_override_colors/font_color = Color(1, 1, 1, 1)
 theme_override_fonts/font = ExtResource("1_yo7bg")
 theme_override_font_sizes/font_size = 50
+theme_override_styles/hover = SubResource("StyleBoxFlat_dutb4")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_yo7bg")
 theme_override_styles/normal = SubResource("StyleBoxFlat_6veuu")
 text = "a"
 
@@ -225,6 +255,8 @@ layout_mode = 2
 theme_override_colors/font_color = Color(1, 1, 1, 1)
 theme_override_fonts/font = ExtResource("1_yo7bg")
 theme_override_font_sizes/font_size = 50
+theme_override_styles/hover = SubResource("StyleBoxFlat_dutb4")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_yo7bg")
 theme_override_styles/normal = SubResource("StyleBoxFlat_6veuu")
 text = "s"
 
@@ -234,6 +266,8 @@ layout_mode = 2
 theme_override_colors/font_color = Color(1, 1, 1, 1)
 theme_override_fonts/font = ExtResource("1_yo7bg")
 theme_override_font_sizes/font_size = 50
+theme_override_styles/hover = SubResource("StyleBoxFlat_dutb4")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_yo7bg")
 theme_override_styles/normal = SubResource("StyleBoxFlat_6veuu")
 text = "d"
 
@@ -243,6 +277,8 @@ layout_mode = 2
 theme_override_colors/font_color = Color(1, 1, 1, 1)
 theme_override_fonts/font = ExtResource("1_yo7bg")
 theme_override_font_sizes/font_size = 50
+theme_override_styles/hover = SubResource("StyleBoxFlat_dutb4")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_yo7bg")
 theme_override_styles/normal = SubResource("StyleBoxFlat_6veuu")
 text = "f"
 
@@ -252,6 +288,8 @@ layout_mode = 2
 theme_override_colors/font_color = Color(1, 1, 1, 1)
 theme_override_fonts/font = ExtResource("1_yo7bg")
 theme_override_font_sizes/font_size = 50
+theme_override_styles/hover = SubResource("StyleBoxFlat_dutb4")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_yo7bg")
 theme_override_styles/normal = SubResource("StyleBoxFlat_6veuu")
 text = "g"
 
@@ -261,6 +299,8 @@ layout_mode = 2
 theme_override_colors/font_color = Color(1, 1, 1, 1)
 theme_override_fonts/font = ExtResource("1_yo7bg")
 theme_override_font_sizes/font_size = 50
+theme_override_styles/hover = SubResource("StyleBoxFlat_dutb4")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_yo7bg")
 theme_override_styles/normal = SubResource("StyleBoxFlat_6veuu")
 text = "h"
 
@@ -270,6 +310,8 @@ layout_mode = 2
 theme_override_colors/font_color = Color(1, 1, 1, 1)
 theme_override_fonts/font = ExtResource("1_yo7bg")
 theme_override_font_sizes/font_size = 50
+theme_override_styles/hover = SubResource("StyleBoxFlat_dutb4")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_yo7bg")
 theme_override_styles/normal = SubResource("StyleBoxFlat_6veuu")
 text = "j"
 
@@ -279,6 +321,8 @@ layout_mode = 2
 theme_override_colors/font_color = Color(1, 1, 1, 1)
 theme_override_fonts/font = ExtResource("1_yo7bg")
 theme_override_font_sizes/font_size = 50
+theme_override_styles/hover = SubResource("StyleBoxFlat_dutb4")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_yo7bg")
 theme_override_styles/normal = SubResource("StyleBoxFlat_6veuu")
 text = "k"
 
@@ -288,6 +332,8 @@ layout_mode = 2
 theme_override_colors/font_color = Color(1, 1, 1, 1)
 theme_override_fonts/font = ExtResource("1_yo7bg")
 theme_override_font_sizes/font_size = 50
+theme_override_styles/hover = SubResource("StyleBoxFlat_dutb4")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_yo7bg")
 theme_override_styles/normal = SubResource("StyleBoxFlat_6veuu")
 text = "l"
 
@@ -302,6 +348,8 @@ layout_mode = 2
 theme_override_colors/font_color = Color(1, 1, 1, 1)
 theme_override_fonts/font = ExtResource("1_yo7bg")
 theme_override_font_sizes/font_size = 70
+theme_override_styles/hover = SubResource("StyleBoxFlat_dutb4")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_yo7bg")
 theme_override_styles/normal = SubResource("StyleBoxFlat_6veuu")
 text = "⬆"
 
@@ -311,6 +359,8 @@ layout_mode = 2
 theme_override_colors/font_color = Color(1, 1, 1, 1)
 theme_override_fonts/font = ExtResource("1_yo7bg")
 theme_override_font_sizes/font_size = 50
+theme_override_styles/hover = SubResource("StyleBoxFlat_dutb4")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_yo7bg")
 theme_override_styles/normal = SubResource("StyleBoxFlat_6veuu")
 text = "z"
 
@@ -320,6 +370,8 @@ layout_mode = 2
 theme_override_colors/font_color = Color(1, 1, 1, 1)
 theme_override_fonts/font = ExtResource("1_yo7bg")
 theme_override_font_sizes/font_size = 50
+theme_override_styles/hover = SubResource("StyleBoxFlat_dutb4")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_yo7bg")
 theme_override_styles/normal = SubResource("StyleBoxFlat_6veuu")
 text = "x"
 
@@ -329,6 +381,8 @@ layout_mode = 2
 theme_override_colors/font_color = Color(1, 1, 1, 1)
 theme_override_fonts/font = ExtResource("1_yo7bg")
 theme_override_font_sizes/font_size = 50
+theme_override_styles/hover = SubResource("StyleBoxFlat_dutb4")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_yo7bg")
 theme_override_styles/normal = SubResource("StyleBoxFlat_6veuu")
 text = "c"
 
@@ -338,6 +392,8 @@ layout_mode = 2
 theme_override_colors/font_color = Color(1, 1, 1, 1)
 theme_override_fonts/font = ExtResource("1_yo7bg")
 theme_override_font_sizes/font_size = 50
+theme_override_styles/hover = SubResource("StyleBoxFlat_dutb4")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_yo7bg")
 theme_override_styles/normal = SubResource("StyleBoxFlat_6veuu")
 text = "v"
 
@@ -347,6 +403,8 @@ layout_mode = 2
 theme_override_colors/font_color = Color(1, 1, 1, 1)
 theme_override_fonts/font = ExtResource("1_yo7bg")
 theme_override_font_sizes/font_size = 50
+theme_override_styles/hover = SubResource("StyleBoxFlat_dutb4")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_yo7bg")
 theme_override_styles/normal = SubResource("StyleBoxFlat_6veuu")
 text = "b"
 
@@ -356,6 +414,8 @@ layout_mode = 2
 theme_override_colors/font_color = Color(1, 1, 1, 1)
 theme_override_fonts/font = ExtResource("1_yo7bg")
 theme_override_font_sizes/font_size = 50
+theme_override_styles/hover = SubResource("StyleBoxFlat_dutb4")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_yo7bg")
 theme_override_styles/normal = SubResource("StyleBoxFlat_6veuu")
 text = "n"
 
@@ -365,6 +425,8 @@ layout_mode = 2
 theme_override_colors/font_color = Color(1, 1, 1, 1)
 theme_override_fonts/font = ExtResource("1_yo7bg")
 theme_override_font_sizes/font_size = 50
+theme_override_styles/hover = SubResource("StyleBoxFlat_dutb4")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_yo7bg")
 theme_override_styles/normal = SubResource("StyleBoxFlat_6veuu")
 text = "m"
 
@@ -374,6 +436,8 @@ layout_mode = 2
 theme_override_colors/font_color = Color(1, 1, 1, 1)
 theme_override_fonts/font = ExtResource("1_yo7bg")
 theme_override_font_sizes/font_size = 50
+theme_override_styles/hover = SubResource("StyleBoxFlat_dutb4")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_yo7bg")
 theme_override_styles/normal = SubResource("StyleBoxFlat_rpc6l")
 text = "⌫"
 
@@ -388,6 +452,8 @@ layout_mode = 2
 theme_override_colors/font_color = Color(1, 1, 1, 1)
 theme_override_fonts/font = ExtResource("1_yo7bg")
 theme_override_font_sizes/font_size = 50
+theme_override_styles/hover = SubResource("StyleBoxFlat_dutb4")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_yo7bg")
 theme_override_styles/normal = SubResource("StyleBoxFlat_rpc6l")
 text = "123"
 
@@ -397,6 +463,8 @@ layout_mode = 2
 theme_override_colors/font_color = Color(1, 1, 1, 1)
 theme_override_fonts/font = ExtResource("1_yo7bg")
 theme_override_font_sizes/font_size = 50
+theme_override_styles/hover = SubResource("StyleBoxFlat_dutb4")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_yo7bg")
 theme_override_styles/normal = SubResource("StyleBoxFlat_rpc6l")
 text = "⚙️"
 
@@ -406,6 +474,8 @@ layout_mode = 2
 theme_override_colors/font_color = Color(1, 1, 1, 1)
 theme_override_fonts/font = ExtResource("1_yo7bg")
 theme_override_font_sizes/font_size = 50
+theme_override_styles/hover = SubResource("StyleBoxFlat_dutb4")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_yo7bg")
 theme_override_styles/normal = SubResource("StyleBoxFlat_rpc6l")
 text = "🙂"
 
@@ -415,6 +485,8 @@ layout_mode = 2
 theme_override_colors/font_color = Color(1, 1, 1, 1)
 theme_override_fonts/font = ExtResource("1_yo7bg")
 theme_override_font_sizes/font_size = 50
+theme_override_styles/hover = SubResource("StyleBoxFlat_dutb4")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_yo7bg")
 theme_override_styles/normal = SubResource("StyleBoxFlat_d8yjl")
 text = "space"
 
@@ -424,6 +496,8 @@ layout_mode = 2
 theme_override_colors/font_color = Color(1, 1, 1, 1)
 theme_override_fonts/font = ExtResource("1_yo7bg")
 theme_override_font_sizes/font_size = 50
+theme_override_styles/hover = SubResource("StyleBoxFlat_dutb4")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_yo7bg")
 theme_override_styles/normal = SubResource("StyleBoxFlat_6veuu")
 text = "."
 
@@ -434,5 +508,7 @@ size_flags_horizontal = 4
 theme_override_colors/font_color = Color(1, 1, 1, 1)
 theme_override_fonts/font = ExtResource("1_yo7bg")
 theme_override_font_sizes/font_size = 100
+theme_override_styles/hover = SubResource("StyleBoxFlat_dutb4")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_yo7bg")
 theme_override_styles/normal = SubResource("StyleBoxFlat_rpc6l")
 text = "↵"
