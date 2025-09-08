@@ -1,0 +1,438 @@
+[gd_scene load_steps=6 format=3 uid="uid://cmdw6eo4d757y"]
+
+[ext_resource type="FontFile" uid="uid://bg7gavbf6j0ij" path="res://Fonts/Roboto_SemiCondensed-Regular.ttf" id="1_yo7bg"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_yo7bg"]
+bg_color = Color(0.362829, 0.362829, 0.362829, 1)
+corner_radius_top_left = 10
+corner_radius_top_right = 10
+corner_radius_bottom_right = 10
+corner_radius_bottom_left = 10
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_6veuu"]
+bg_color = Color(0.258824, 0.258824, 0.258824, 1)
+border_width_bottom = 5
+border_color = Color(0.0962047, 0.0962048, 0.0962047, 1)
+corner_radius_top_left = 20
+corner_radius_top_right = 20
+corner_radius_bottom_right = 20
+corner_radius_bottom_left = 20
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_rpc6l"]
+bg_color = Color(0.188235, 0.188235, 0.188235, 1)
+border_width_bottom = 5
+border_color = Color(0.0962047, 0.0962048, 0.0962047, 1)
+corner_radius_top_left = 20
+corner_radius_top_right = 20
+corner_radius_bottom_right = 20
+corner_radius_bottom_left = 20
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_d8yjl"]
+bg_color = Color(0.258824, 0.258824, 0.258824, 1)
+border_width_bottom = 5
+border_color = Color(0.0962047, 0.0962048, 0.0962047, 1)
+corner_radius_top_left = 20
+corner_radius_top_right = 20
+corner_radius_bottom_right = 20
+corner_radius_bottom_left = 20
+
+[node name="Keyboard" type="Control"]
+custom_minimum_size = Vector2(1248, 1053)
+layout_mode = 3
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -624.0
+offset_top = -526.5
+offset_right = 624.0
+offset_bottom = 526.5
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Screen" type="Panel" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Background" type="ColorRect" parent="Screen"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.129412, 0.129412, 0.129412, 1)
+
+[node name="AllComponentsComtainer" type="VBoxContainer" parent="Screen/Background"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/separation = -132
+
+[node name="DisplayContainer" type="VBoxContainer" parent="Screen/Background/AllComponentsComtainer"]
+layout_mode = 2
+size_flags_vertical = 4
+
+[node name="MarginContainer" type="MarginContainer" parent="Screen/Background/AllComponentsComtainer/DisplayContainer"]
+layout_mode = 2
+theme_override_constants/margin_left = 50
+theme_override_constants/margin_top = 50
+theme_override_constants/margin_right = 50
+theme_override_constants/margin_bottom = 400
+
+[node name="Button" type="Button" parent="Screen/Background/AllComponentsComtainer/DisplayContainer/MarginContainer"]
+layout_mode = 2
+theme_override_styles/normal = SubResource("StyleBoxFlat_yo7bg")
+
+[node name="TypedText" type="Label" parent="Screen/Background/AllComponentsComtainer/DisplayContainer/MarginContainer"]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("1_yo7bg")
+theme_override_font_sizes/font_size = 45
+text = "This is an example of what people will see.
+"
+vertical_alignment = 2
+
+[node name="AllButtons" type="VBoxContainer" parent="Screen/Background/AllComponentsComtainer"]
+custom_minimum_size = Vector2(0, 400)
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="ButtonRows" type="VBoxContainer" parent="Screen/Background/AllComponentsComtainer/AllButtons"]
+layout_mode = 2
+size_flags_vertical = 3
+theme_override_constants/separation = 28
+
+[node name="Row1" type="HBoxContainer" parent="Screen/Background/AllComponentsComtainer/AllButtons/ButtonRows"]
+layout_mode = 2
+size_flags_horizontal = 4
+theme_override_constants/separation = 14
+
+[node name="q" type="Button" parent="Screen/Background/AllComponentsComtainer/AllButtons/ButtonRows/Row1"]
+custom_minimum_size = Vector2(110, 130)
+layout_mode = 2
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_fonts/font = ExtResource("1_yo7bg")
+theme_override_font_sizes/font_size = 50
+theme_override_styles/normal = SubResource("StyleBoxFlat_6veuu")
+text = "q"
+
+[node name="w" type="Button" parent="Screen/Background/AllComponentsComtainer/AllButtons/ButtonRows/Row1"]
+custom_minimum_size = Vector2(110, 130)
+layout_mode = 2
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_fonts/font = ExtResource("1_yo7bg")
+theme_override_font_sizes/font_size = 50
+theme_override_styles/normal = SubResource("StyleBoxFlat_6veuu")
+text = "w"
+
+[node name="e" type="Button" parent="Screen/Background/AllComponentsComtainer/AllButtons/ButtonRows/Row1"]
+custom_minimum_size = Vector2(110, 130)
+layout_mode = 2
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_fonts/font = ExtResource("1_yo7bg")
+theme_override_font_sizes/font_size = 50
+theme_override_styles/normal = SubResource("StyleBoxFlat_6veuu")
+text = "e"
+
+[node name="r" type="Button" parent="Screen/Background/AllComponentsComtainer/AllButtons/ButtonRows/Row1"]
+custom_minimum_size = Vector2(110, 130)
+layout_mode = 2
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_fonts/font = ExtResource("1_yo7bg")
+theme_override_font_sizes/font_size = 50
+theme_override_styles/normal = SubResource("StyleBoxFlat_6veuu")
+text = "r"
+
+[node name="t" type="Button" parent="Screen/Background/AllComponentsComtainer/AllButtons/ButtonRows/Row1"]
+custom_minimum_size = Vector2(110, 130)
+layout_mode = 2
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_fonts/font = ExtResource("1_yo7bg")
+theme_override_font_sizes/font_size = 50
+theme_override_styles/normal = SubResource("StyleBoxFlat_6veuu")
+text = "t"
+
+[node name="y" type="Button" parent="Screen/Background/AllComponentsComtainer/AllButtons/ButtonRows/Row1"]
+custom_minimum_size = Vector2(110, 130)
+layout_mode = 2
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_fonts/font = ExtResource("1_yo7bg")
+theme_override_font_sizes/font_size = 50
+theme_override_styles/normal = SubResource("StyleBoxFlat_6veuu")
+text = "y"
+
+[node name="u" type="Button" parent="Screen/Background/AllComponentsComtainer/AllButtons/ButtonRows/Row1"]
+custom_minimum_size = Vector2(110, 130)
+layout_mode = 2
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_fonts/font = ExtResource("1_yo7bg")
+theme_override_font_sizes/font_size = 50
+theme_override_styles/normal = SubResource("StyleBoxFlat_6veuu")
+text = "u"
+
+[node name="i" type="Button" parent="Screen/Background/AllComponentsComtainer/AllButtons/ButtonRows/Row1"]
+custom_minimum_size = Vector2(110, 130)
+layout_mode = 2
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_fonts/font = ExtResource("1_yo7bg")
+theme_override_font_sizes/font_size = 50
+theme_override_styles/normal = SubResource("StyleBoxFlat_6veuu")
+text = "i"
+
+[node name="o" type="Button" parent="Screen/Background/AllComponentsComtainer/AllButtons/ButtonRows/Row1"]
+custom_minimum_size = Vector2(110, 130)
+layout_mode = 2
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_fonts/font = ExtResource("1_yo7bg")
+theme_override_font_sizes/font_size = 50
+theme_override_styles/normal = SubResource("StyleBoxFlat_6veuu")
+text = "o"
+
+[node name="p" type="Button" parent="Screen/Background/AllComponentsComtainer/AllButtons/ButtonRows/Row1"]
+custom_minimum_size = Vector2(110, 130)
+layout_mode = 2
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_fonts/font = ExtResource("1_yo7bg")
+theme_override_font_sizes/font_size = 50
+theme_override_styles/normal = SubResource("StyleBoxFlat_6veuu")
+text = "p"
+
+[node name="Row2" type="HBoxContainer" parent="Screen/Background/AllComponentsComtainer/AllButtons/ButtonRows"]
+layout_mode = 2
+size_flags_horizontal = 4
+theme_override_constants/separation = 14
+
+[node name="q" type="Button" parent="Screen/Background/AllComponentsComtainer/AllButtons/ButtonRows/Row2"]
+custom_minimum_size = Vector2(110, 130)
+layout_mode = 2
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_fonts/font = ExtResource("1_yo7bg")
+theme_override_font_sizes/font_size = 50
+theme_override_styles/normal = SubResource("StyleBoxFlat_6veuu")
+text = "a"
+
+[node name="w" type="Button" parent="Screen/Background/AllComponentsComtainer/AllButtons/ButtonRows/Row2"]
+custom_minimum_size = Vector2(110, 130)
+layout_mode = 2
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_fonts/font = ExtResource("1_yo7bg")
+theme_override_font_sizes/font_size = 50
+theme_override_styles/normal = SubResource("StyleBoxFlat_6veuu")
+text = "s"
+
+[node name="e" type="Button" parent="Screen/Background/AllComponentsComtainer/AllButtons/ButtonRows/Row2"]
+custom_minimum_size = Vector2(110, 130)
+layout_mode = 2
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_fonts/font = ExtResource("1_yo7bg")
+theme_override_font_sizes/font_size = 50
+theme_override_styles/normal = SubResource("StyleBoxFlat_6veuu")
+text = "d"
+
+[node name="r" type="Button" parent="Screen/Background/AllComponentsComtainer/AllButtons/ButtonRows/Row2"]
+custom_minimum_size = Vector2(110, 130)
+layout_mode = 2
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_fonts/font = ExtResource("1_yo7bg")
+theme_override_font_sizes/font_size = 50
+theme_override_styles/normal = SubResource("StyleBoxFlat_6veuu")
+text = "f"
+
+[node name="t" type="Button" parent="Screen/Background/AllComponentsComtainer/AllButtons/ButtonRows/Row2"]
+custom_minimum_size = Vector2(110, 130)
+layout_mode = 2
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_fonts/font = ExtResource("1_yo7bg")
+theme_override_font_sizes/font_size = 50
+theme_override_styles/normal = SubResource("StyleBoxFlat_6veuu")
+text = "g"
+
+[node name="y" type="Button" parent="Screen/Background/AllComponentsComtainer/AllButtons/ButtonRows/Row2"]
+custom_minimum_size = Vector2(110, 130)
+layout_mode = 2
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_fonts/font = ExtResource("1_yo7bg")
+theme_override_font_sizes/font_size = 50
+theme_override_styles/normal = SubResource("StyleBoxFlat_6veuu")
+text = "h"
+
+[node name="u" type="Button" parent="Screen/Background/AllComponentsComtainer/AllButtons/ButtonRows/Row2"]
+custom_minimum_size = Vector2(110, 130)
+layout_mode = 2
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_fonts/font = ExtResource("1_yo7bg")
+theme_override_font_sizes/font_size = 50
+theme_override_styles/normal = SubResource("StyleBoxFlat_6veuu")
+text = "j"
+
+[node name="i" type="Button" parent="Screen/Background/AllComponentsComtainer/AllButtons/ButtonRows/Row2"]
+custom_minimum_size = Vector2(110, 130)
+layout_mode = 2
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_fonts/font = ExtResource("1_yo7bg")
+theme_override_font_sizes/font_size = 50
+theme_override_styles/normal = SubResource("StyleBoxFlat_6veuu")
+text = "k"
+
+[node name="o" type="Button" parent="Screen/Background/AllComponentsComtainer/AllButtons/ButtonRows/Row2"]
+custom_minimum_size = Vector2(110, 130)
+layout_mode = 2
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_fonts/font = ExtResource("1_yo7bg")
+theme_override_font_sizes/font_size = 50
+theme_override_styles/normal = SubResource("StyleBoxFlat_6veuu")
+text = "l"
+
+[node name="Row3" type="HBoxContainer" parent="Screen/Background/AllComponentsComtainer/AllButtons/ButtonRows"]
+layout_mode = 2
+size_flags_horizontal = 4
+theme_override_constants/separation = 14
+
+[node name="CPL" type="Button" parent="Screen/Background/AllComponentsComtainer/AllButtons/ButtonRows/Row3"]
+custom_minimum_size = Vector2(155, 130)
+layout_mode = 2
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_fonts/font = ExtResource("1_yo7bg")
+theme_override_font_sizes/font_size = 70
+theme_override_styles/normal = SubResource("StyleBoxFlat_6veuu")
+text = "⬆"
+
+[node name="z" type="Button" parent="Screen/Background/AllComponentsComtainer/AllButtons/ButtonRows/Row3"]
+custom_minimum_size = Vector2(110, 130)
+layout_mode = 2
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_fonts/font = ExtResource("1_yo7bg")
+theme_override_font_sizes/font_size = 50
+theme_override_styles/normal = SubResource("StyleBoxFlat_6veuu")
+text = "z"
+
+[node name="x" type="Button" parent="Screen/Background/AllComponentsComtainer/AllButtons/ButtonRows/Row3"]
+custom_minimum_size = Vector2(110, 130)
+layout_mode = 2
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_fonts/font = ExtResource("1_yo7bg")
+theme_override_font_sizes/font_size = 50
+theme_override_styles/normal = SubResource("StyleBoxFlat_6veuu")
+text = "x"
+
+[node name="c" type="Button" parent="Screen/Background/AllComponentsComtainer/AllButtons/ButtonRows/Row3"]
+custom_minimum_size = Vector2(110, 130)
+layout_mode = 2
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_fonts/font = ExtResource("1_yo7bg")
+theme_override_font_sizes/font_size = 50
+theme_override_styles/normal = SubResource("StyleBoxFlat_6veuu")
+text = "c"
+
+[node name="v" type="Button" parent="Screen/Background/AllComponentsComtainer/AllButtons/ButtonRows/Row3"]
+custom_minimum_size = Vector2(110, 130)
+layout_mode = 2
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_fonts/font = ExtResource("1_yo7bg")
+theme_override_font_sizes/font_size = 50
+theme_override_styles/normal = SubResource("StyleBoxFlat_6veuu")
+text = "v"
+
+[node name="b" type="Button" parent="Screen/Background/AllComponentsComtainer/AllButtons/ButtonRows/Row3"]
+custom_minimum_size = Vector2(110, 130)
+layout_mode = 2
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_fonts/font = ExtResource("1_yo7bg")
+theme_override_font_sizes/font_size = 50
+theme_override_styles/normal = SubResource("StyleBoxFlat_6veuu")
+text = "b"
+
+[node name="n" type="Button" parent="Screen/Background/AllComponentsComtainer/AllButtons/ButtonRows/Row3"]
+custom_minimum_size = Vector2(110, 130)
+layout_mode = 2
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_fonts/font = ExtResource("1_yo7bg")
+theme_override_font_sizes/font_size = 50
+theme_override_styles/normal = SubResource("StyleBoxFlat_6veuu")
+text = "n"
+
+[node name="m" type="Button" parent="Screen/Background/AllComponentsComtainer/AllButtons/ButtonRows/Row3"]
+custom_minimum_size = Vector2(110, 130)
+layout_mode = 2
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_fonts/font = ExtResource("1_yo7bg")
+theme_override_font_sizes/font_size = 50
+theme_override_styles/normal = SubResource("StyleBoxFlat_6veuu")
+text = "m"
+
+[node name="DEL" type="Button" parent="Screen/Background/AllComponentsComtainer/AllButtons/ButtonRows/Row3"]
+custom_minimum_size = Vector2(155, 130)
+layout_mode = 2
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_fonts/font = ExtResource("1_yo7bg")
+theme_override_font_sizes/font_size = 50
+theme_override_styles/normal = SubResource("StyleBoxFlat_rpc6l")
+text = "⌫"
+
+[node name="Row4" type="HBoxContainer" parent="Screen/Background/AllComponentsComtainer/AllButtons/ButtonRows"]
+layout_mode = 2
+size_flags_horizontal = 4
+theme_override_constants/separation = 14
+
+[node name="123" type="Button" parent="Screen/Background/AllComponentsComtainer/AllButtons/ButtonRows/Row4"]
+custom_minimum_size = Vector2(155, 130)
+layout_mode = 2
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_fonts/font = ExtResource("1_yo7bg")
+theme_override_font_sizes/font_size = 50
+theme_override_styles/normal = SubResource("StyleBoxFlat_rpc6l")
+text = "123"
+
+[node name="settings" type="Button" parent="Screen/Background/AllComponentsComtainer/AllButtons/ButtonRows/Row4"]
+custom_minimum_size = Vector2(110, 130)
+layout_mode = 2
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_fonts/font = ExtResource("1_yo7bg")
+theme_override_font_sizes/font_size = 50
+theme_override_styles/normal = SubResource("StyleBoxFlat_rpc6l")
+text = "⚙️"
+
+[node name="emoji" type="Button" parent="Screen/Background/AllComponentsComtainer/AllButtons/ButtonRows/Row4"]
+custom_minimum_size = Vector2(110, 130)
+layout_mode = 2
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_fonts/font = ExtResource("1_yo7bg")
+theme_override_font_sizes/font_size = 50
+theme_override_styles/normal = SubResource("StyleBoxFlat_rpc6l")
+text = "🙂"
+
+[node name="space" type="Button" parent="Screen/Background/AllComponentsComtainer/AllButtons/ButtonRows/Row4"]
+custom_minimum_size = Vector2(482, 130)
+layout_mode = 2
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_fonts/font = ExtResource("1_yo7bg")
+theme_override_font_sizes/font_size = 50
+theme_override_styles/normal = SubResource("StyleBoxFlat_d8yjl")
+text = "space"
+
+[node name="dot" type="Button" parent="Screen/Background/AllComponentsComtainer/AllButtons/ButtonRows/Row4"]
+custom_minimum_size = Vector2(110, 130)
+layout_mode = 2
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_fonts/font = ExtResource("1_yo7bg")
+theme_override_font_sizes/font_size = 50
+theme_override_styles/normal = SubResource("StyleBoxFlat_6veuu")
+text = "."
+
+[node name="enter" type="Button" parent="Screen/Background/AllComponentsComtainer/AllButtons/ButtonRows/Row4"]
+custom_minimum_size = Vector2(155, 130)
+layout_mode = 2
+size_flags_horizontal = 4
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_fonts/font = ExtResource("1_yo7bg")
+theme_override_font_sizes/font_size = 100
+theme_override_styles/normal = SubResource("StyleBoxFlat_rpc6l")
+text = "↵"
