@@ -201,7 +201,6 @@ func _on_emoji_pressed() -> void:
 		# First character is comma
 		actual_text = ","
 		has_been_used = true
-	else:
-		# Add comma to existing text
+	elif symbols_on and has_been_used:
 		actual_text += ","
 	update_display()
